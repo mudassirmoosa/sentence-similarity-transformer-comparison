@@ -41,7 +41,7 @@ The following table summarizes the results:
 
 Interestingly, we note that our trained DeBERTa or RoBERTa model perform better than the fine-tuned BERT model in this [HF tutorial](https://huggingface.co/learn/llm-course/chapter3/3?fw=pt), where the validation accuracy of 85.8 was reported. 
 
-It is also interesting to note that our experiments suggest that the *encoder-only* models like DeBERTa and RoBERTa perform better for sentence similarity tasks than the *decoder-only* models like GPT-2. This is probably because the encoder-only models use 'bi-directional' attention, and hence, can attend to both sentences together. On the other hand, the decoder-only models use causal (unidirectional) attention and cannot attend to both sentences simultaneously.
+It is also interesting to note that our experiments suggest that the *encoder-only* models like DeBERTa and RoBERTa perform better for sentence similarity tasks than the *decoder-only* models like GPT-2. This is probably because the encoder-only models use 'bidirectional' attention, and hence, can attend to both sentences together. On the other hand, the decoder-only models use causal (unidirectional) attention and cannot attend to both sentences simultaneously.
 
 ### Saved Weights
 
