@@ -1,10 +1,10 @@
 ### Introduction
 
-This repository contains a comparative study of fine-tuning pre-trained transformer models for sentence similarity tasks. We compare three models: RoBERTa, DeBERTa, and GPT-2. The main goal of this project is to gain hands-on experience with finetuning hyperparameters to get the best performance. The finetuning of BERT for sentence similarity task was performed in this [Hugging Face (HF) tutorial](https://huggingface.co/learn/llm-course/chapter3/3?fw=pt), though no hyperparameter optimization was performed. So our goal is to beat the results achieved in this tutorial by trying different hyperparameters.
+This repository contains a comparative study of fine-tuning pre-trained transformer models for sentence similarity tasks. We compare three models: RoBERTa, DeBERTa, and GPT-2. The main goal of this project is to gain hands-on experience with fine-tuning hyperparameters to get the best performance. The fine-tuning of BERT for sentence similarity task was performed in this [Hugging Face (HF) tutorial](https://huggingface.co/learn/llm-course/chapter3/3?fw=pt), though no hyperparameter optimization was performed. So our goal is to beat the results achieved in this tutorial by trying different hyperparameters.
 
 ### Data
 
-We use the [Microsoft Research Paraphrase Corpus (MRPC)](https://aclanthology.org/I05-5002.pdf) dataset consisting of $5801$ pairs of sentences, which is available through [HF datasets](https://huggingface.co/datasets/nyu-mll/glue/viewer/mrpc?views%5B%5D=mrpc_train). Almost 63% of this dataset is taken to be the training dataset, almost 7% is taken as the validation dataset, and almost 30% is taken as the test dataset. This dataset was also used in the aforementioned HF tutorial. 
+We use the [Microsoft Research Paraphrase Corpus (MRPC)](https://aclanthology.org/I05-5002.pdf) dataset consisting of 5,801 pairs of sentences, which is available through [HF datasets](https://huggingface.co/datasets/nyu-mll/glue/viewer/mrpc?views%5B%5D=mrpc_train). Almost 63% of this dataset is taken to be the training dataset, almost 7% is taken as the validation dataset, and almost 30% is taken as the test dataset. This dataset was also used in the aforementioned HF tutorial. 
 
 
 ### LLMs as classifiers
@@ -35,7 +35,7 @@ The following table summarizes the results:
 
 | Model Name  | Validation Loss | Validation Accuracy |Test Loss | Test Accuracy |
 |-------|----------|----------|----------|----------|
-| DeBERTa | 0.228  | 90.4% | 0.323| 87.2%|
+| DeBERTa | 0.228  | 90.4% | 0.323 | 87.2%|
 | RoBERTa   | 0.258  | 88.5 %   | 0.318| 86.7%|
 | GPT2 | 0.408  | 81.1%    | 0.435| 80.0%|
 
@@ -49,4 +49,4 @@ The trained model weights for all three models are available on the HF model rep
 
 ### Future Directions
 
-After doing this project, we wonder whether it would be better to only train the weights of the classifier head (i.e. keeping the weights of the pre-trained model fixed or 'frozen'.) It seems that this would be a special case of a [Parameter-efficient finetuning (PEFT)](https://github.com/huggingface/peft) technique for efficient finetuning. It will be interesting to explore this direction next. 
+After doing this project, we wonder whether it would be better to only train the weights of the classifier head (i.e. keeping the weights of the pre-trained model fixed or 'frozen'.) It seems that this would be a special case of a [Parameter-efficient fine-tuning (PEFT)](https://github.com/huggingface/peft) technique for efficient finetuning. It will be interesting to explore this direction next. 
