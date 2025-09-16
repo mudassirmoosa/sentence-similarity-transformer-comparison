@@ -4,7 +4,7 @@ This is the repository for a comparative study of finetuning various pre-trained
 
 ### Data
 
-We use the [Microsoft Research Paraphrase Corpus (MRPC)](https://aclanthology.org/I05-5002.pdf) dataset consisting of $5801$ pair of sentences, which is available through [HF](https://huggingface.co/datasets/nyu-mll/glue/viewer/mrpc?views%5B%5D=mrpc_train). This dataset was also used in the aforementioned HF tutorial. 
+We use the [Microsoft Research Paraphrase Corpus (MRPC)](https://aclanthology.org/I05-5002.pdf) dataset consisting of $5801$ pair of sentences, which is available through [HF datasets](https://huggingface.co/datasets/nyu-mll/glue/viewer/mrpc?views%5B%5D=mrpc_train). Almost 63% of this dataset is taken to be a train dataset, almost 7% is taken as a validation dataset, and almost 30% is taken as a test dataset. This dataset was also used in the aforementioned HF tutorial. 
 
 
 ### LLMs as classifiers
