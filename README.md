@@ -1,6 +1,6 @@
 ### Introduction
 
-This is the repository for a comparative study of finetuning various pre-trained transformers models (RoBERTa, DeBERTa, and GPT-2) for sentence similarity tasks. The main goal of this project is to gain hands-on experience with finetuning hyperparameters to get the best performance. The finetuning of BERT for sentence similarity task was performed in this [Hugging Face (HF) tutorial](https://huggingface.co/learn/llm-course/chapter3/3?fw=pt), though no hyperparameter optimization was performed. So our goal is to beat the results achieved in this tutorial by trying different hyperparameters.
+This repository contains a comparative study of fine-tuning pre-trained transformer models for sentence similarity tasks. We compare three models: RoBERTa, DeBERTa, and GPT-2. The main goal of this project is to gain hands-on experience with finetuning hyperparameters to get the best performance. The finetuning of BERT for sentence similarity task was performed in this [Hugging Face (HF) tutorial](https://huggingface.co/learn/llm-course/chapter3/3?fw=pt), though no hyperparameter optimization was performed. So our goal is to beat the results achieved in this tutorial by trying different hyperparameters.
 
 ### Data
 
